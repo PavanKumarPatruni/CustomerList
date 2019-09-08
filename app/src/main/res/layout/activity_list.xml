@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="@dimen/eight_dp"
+    tools:context=".activities.ListActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="@dimen/fourty_dp"
+        android:layout_height="@dimen/fourty_dp"
+        android:layout_margin="@dimen/eight_dp"
+        android:background="@drawable/rounded_button"
+        android:src="@drawable/ic_arrow_back"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDeleteAll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fourty_dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:paddingLeft="@dimen/sixteen_dp"
+        android:paddingRight="@dimen/sixteen_dp"
+        android:text="@string/DELETE_ALL"
+        android:textColor="@color/colorLightColor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonBack"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginTop="@dimen/eight_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBack" />
+
+    <TextView
+        android:id="@+id/textViewNoCustomers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/NO_CUSTOMERS"
+        android:textColor="@color/colorLightColor"
+        android:textSize="@dimen/twenty_four_sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

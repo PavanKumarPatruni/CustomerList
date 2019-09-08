@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">EazyDiner-Task</string>
+    <string name="ENTER_DETAILS">Enter Details</string>
+    <string name="name">Name</string>
+    <string name="customer_id">Customer Id</string>
+    <string name="address">Address</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="group">Group</string>
+    <string name="individual">Individual</string>
+    <string name="type">Type</string>
+    <string name="save">Save</string>
+    <string name="INVALID_DETAILS">Invalid details</string>
+    <string name="VIEW_ALL">View All</string>
+    <string name="INVALID_ID">Invalid Customer Id</string>
+    <string name="SUCCESS">Success</string>
+    <string name="NO_CUSTOMERS">No customers</string>
+
+    <string name="ALERT_TYPE_CHANGE">Are you sure to change the type?</string>
+    <string name="INVALID_PHONE_NUMBER">Invalid contact number</string>
+    <string name="DELETE_ALL">Delete All</string>
+</resources>
